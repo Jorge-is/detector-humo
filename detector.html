@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detector de Humo</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="titulo">
+            <h1>Detector de Humo</h1>
+        </div>
+        <div class="detector">
+            <img src="img/detector.png" alt="Detector de Humo" class="detector-img">
+            <div class="estado" id="estado">Normal (Sin Humo)</div>
+            <div class="mensaje-alerta" id="mensaje-alerta" style="display: none;">¡Alerta!</div>
+        </div>
+        <div class="humo" id="humo" draggable="true">
+            <img src="img/humo.png" alt="Humo">
+        </div>
+        <svg id="linea-distancia"></svg>
+        <div id="distancia-texto" class="distancia">Distancia: 0px</div>
+    </div>
+    <script src="logica.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #a1c4fd, #c2e9fb);
+}
+
+.contenedor {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.titulo h1 {
+    margin: 20px;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+}
+
+.detector {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.detector-img {
+    width: 200px;
+}
+
+.detector-img:hover {
+    transform: scale(1.1); 
+}
+
+.estado {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    color: rgb(23, 104, 3);
+    font-weight: bold;
+    font-size: 1.2rem; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out, transform 0.3s;   
+}
+
+.estado:hover {
+    transform: scale(1.05);
+}
+
+.humo {
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    cursor: grab;
+    transition: transform 0.2s ease-in-out;
+}
+
+.humo img {
+    width: 80px;
+}
+
+.humo img:hover {
+    transform: scale(1.1);
+}
+
+#estado.normal {
+    background-color: green;
+    color: white;
+}
+
+#estado.advertencia {
+    background-color: orange;
+    color: white;
+}
+
+#estado.alerta {
+    background-color: red;
+    color: white;
+}
+
+.mensaje-alerta {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.distancia {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    color: #34495e;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#linea-distancia {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+@media (max-width: 600px) {
+    .detector-img {
+        width: 100px;
+    }
+
+    .humo img {
+        width: 50px;
+    }
+
+    .titulo h1 {
+        font-size: 2rem;
+    }
+
+    .distancia {
+        font-size: 1rem;
+    }
+}
