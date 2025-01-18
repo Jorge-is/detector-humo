@@ -25,7 +25,7 @@ document.addEventListener("dragover", (e) => {
   const y = e.clientY - contenedor.top;
 
   //Actualizar la posición del humo
-  humo.style.left = `${x - humo.offsetWidth / 2}px`; //Centra la imagen del humo
+  humo.style.left = `${x - humo.offsetWidth / 2}px`;
   humo.style.top = `${y - humo.offsetHeight / 2}px`;
 
   actualizarEstado();
