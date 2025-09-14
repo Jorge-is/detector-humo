@@ -1,3 +1,1 @@
 # Proyecto de detector de humo
-
-Lorem Ipsum ...
